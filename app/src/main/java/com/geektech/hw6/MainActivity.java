@@ -27,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
         TextView textView5 = findViewById(R.id.zabil2);
 
         setContentView(R.layout.activity_main);
-        button.setBackgroundColor(ContextCompat.getColor(MainActivity.this,R.color.orange));
-        findViewById(R.id.vxod).setOnClickListener(view -> {
+        button.setBackgroundColor(ContextCompat.getColor(MainActivity.this,R.drawable.corners3));
+        button.setOnClickListener(view -> {
             if (poshta.getText().toString().equals("admin")&& parol.getText().toString().equals("admin")){
                 editText1.setVisibility(View.GONE);
                 editText2.setVisibility(View.GONE);
