@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@drawable/img"
+    tools:context=".MainActivity">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:text="Вход"
+    android:textSize="28dp"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    android:layout_marginTop="10dp"
+    />
+    <TextView
+        android:id="@+id/Dobro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Добро пожаловать!"
+        android:textSize="28dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="280dp"
+        />
+    <TextView
+        android:id="@+id/Vipolnite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Dobro"
+android:gravity="center_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Выполните вход \n или зарегистрируйтесь."
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="1dp"
+        />
+    <EditText
+         android:visibility="visible"
+android:id="@+id/poshta"
+
+        android:background="@drawable/corners"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:hint="Введите вашу почту:"
+        app:layout_constraintTop_toBottomOf="@id/Vipolnite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:inputType="textEmailAddress"
+        />
+    <EditText
+android:id="@+id/parol"
+        android:background="@drawable/corners"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:hint="Введите пароль:"
+        app:layout_constraintTop_toBottomOf="@id/poshta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:inputType="textPassword"
+        />
+    <Button
+        android:id="@+id/vxod"
+        android:background="@drawable/corners2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:textColor="@color/white"
+        android:text="Войти"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/parol"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <TextView
+        android:id="@+id/zabil1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/vxod"
+        android:layout_marginEnd="150dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Забыл пароль?"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="1dp"
+        />
+    <TextView
+        android:id="@+id/zabil2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/vxod"
+android:layout_marginStart="3dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintStart_toEndOf="@id/zabil1"
+        android:text="кликни сюда"
+        android:textSize="20dp"
+        android:textColor="@color/orange"
+        android:layout_marginTop="1dp"
+
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
